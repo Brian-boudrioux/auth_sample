@@ -1,0 +1,83 @@
+.descriptionoffre {
+  background-color: #ad9d8b;
+  border-radius: 15px;
+  margin: 2rem;
+  margin-bottom: 1rem;
+}
+
+.descriptionoffre p {
+  font-size: x-large;
+}
+
+.offer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.titleh1 {
+  font-size: xx-large;
+}
+
+.titleh2 {
+  font-size: x-large;
+}
+
+.titleh3 {
+  font-size: large;
+}
+
+.competence {
+  font-size: small;
+}
+
+.competence,
+.skillssh {
+  border: 1px solid grey;
+}
+
+.softskillsrm {
+  border-collapse: collapse;
+  width: 20%;
+  height: 20%;
+}
+
+.hardskillsrm {
+  border-collapse: collapse;
+  width: 20%;
+  height: 20%;
+}
+
+.ligne-separation1 {
+  border: 1px solid black;
+  width: 90%;
+}
+
+.ligne-separation {
+  border: 1px solid black;
+  width: 20%;
+}
+
+.shskills {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 0.5rem;
+  font-size: small;
+}
+
+@media screen and (max-width: 375px) {
+  .descriptionoffre {
+    margin: 1rem;
+  }
+
+  .ligne-separation1,
+  .ligne-separation {
+    width: 80%;
+  }
+
+  .shskills {
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,24 @@
+.home,
+.search,
+.profile,
+.following {
+  height: 4rem;
+  width: 4rem;
+}
+.home button,
+.search button,
+.profile button,
+.following button {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 1rem;
+}
+
+.mobile {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  border: black;
+  background-color: #8d7b64;
+  width: 430px;
+}

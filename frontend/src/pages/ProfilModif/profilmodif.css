@@ -1,0 +1,112 @@
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1.4px #61646bb6;
+  border-style: dashed;
+  border-radius: 2%;
+  height: 480px;
+  width: 80%;
+  margin-top: 1.5rem;
+}
+.pg_modify {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info_input {
+  width: 78%;
+  background: transparent;
+  border: solid 1.2px #61646bb6;
+  border-radius: 5px;
+  height: 1.7rem;
+  margin-top: 1rem;
+}
+.img_input {
+  border: 1.4px #61646bb6;
+  border-style: dashed;
+  height: 15rem;
+  width: 88%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.info_img {
+  color: #61646bb6;
+}
+
+.upload_icon {
+  width: 45px;
+  margin-top: -1rem;
+}
+
+.info {
+  color: #61646bb6;
+  margin-bottom: -0.4rem;
+  margin-left: -42%;
+}
+
+.motiv_skills_modif {
+  background-color: #ad9d8b;
+  padding: 20px;
+  border-radius: 10px;
+  width: 88%;
+  margin-top: 1.2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.skill_modif_heading {
+  font-size: 18px;
+  margin-right: 42%;
+  margin-top: 1rem;
+}
+.skill_options {
+  width: 88%;
+  background-color: #58524b;
+}
+.motivation_modif_heading {
+  font-size: 18px;
+  margin-right: 56%;
+  margin-top: 3.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.motivation_input_modif {
+  width: 90%;
+  height: 10rem;
+  margin-bottom: 1.5rem;
+}
+.modifPen {
+  width: 25px;
+  height: 1.3rem;
+  margin-left: 8%;
+}
+.modif_img_heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.btn_save {
+  background-color: #557cae;
+  border: none;
+  color: white;
+  padding: 12px;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 12px;
+  width: 44%;
+  font-weight: bold;
+  margin-top: 1.5rem;
+
+  text-decoration: none;
+}

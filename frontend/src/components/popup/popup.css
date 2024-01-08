@@ -1,0 +1,27 @@
+.up_pop {
+  display: flex;
+  justify-content: center;
+}
+
+.pop_up {
+  background-color: #ecb084;
+  border-radius: 15px;
+  width: 60%;
+  margin: 8rem;
+}
+
+.pop_up p {
+  font-family: "Gilda Display";
+  font-size: xx-large;
+}
+
+@media screen and (max-width: 426px) {
+  .pop_up p {
+    font-size: larger;
+  }
+
+  .pop_up {
+    margin: 1rem;
+    width: 80%;
+  }
+}

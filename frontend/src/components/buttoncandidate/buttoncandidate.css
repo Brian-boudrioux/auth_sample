@@ -1,0 +1,12 @@
+.candidate {
+  width: 10rem;
+  height: 5rem;
+  background-color: #557cae;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+}
+
+.textcandidate {
+  font-size: small;
+  color: white;
+}

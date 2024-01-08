@@ -1,0 +1,81 @@
+.connection {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: sans-serif;
+  background: #eae0d5;
+}
+
+.logo {
+  margin-left: 3rem;
+  width: 15rem;
+  height: 15rem;
+}
+
+.login-box {
+  padding: 2rem 0;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 20px;
+  color: #070707;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 3px solid #060606;
+  background: transparent;
+}
+
+.btn-connection {
+  margin-left: 4rem;
+  padding-top: 10px;
+  font-size: 20px;
+  color: #000000;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+}
+
+.ligne-btn-connection {
+  margin-left: 4.1rem;
+  border-top: 3px solid #000000;
+  overflow: visible;
+  text-align: center;
+  width: 6.3rem;
+}
+
+.ray {
+  margin-left: -0.1rem;
+  width: 15rem;
+  height: 15rem;
+}
+
+.inscription-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.creationcompte {
+  letter-spacing: 3px;
+}
+
+.inscrire {
+  width: 16rem;
+  margin-left: 2.2rem;
+  padding-top: 10px;
+  font-size: 20px;
+  color: #000000;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+}
+
+.ligne-inscription {
+  margin-left: 4.1rem;
+  border-top: 3px solid #000000;
+  overflow: visible;
+  text-align: center;
+  width: 12.3rem;
+}

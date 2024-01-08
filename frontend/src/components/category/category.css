@@ -1,0 +1,21 @@
+.rh,
+.technique,
+.security {
+  width: auto;
+  margin-bottom: 1rem;
+}
+.categorie {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.categories img {
+  width: 4rem;
+  height: 4rem;
+}
+.categories {
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+}

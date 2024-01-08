@@ -1,0 +1,26 @@
+.homepage {
+  position: absolute;
+  max-width: 430px;
+  max-height: 932px;
+}
+.catfilter {
+  width: 400px;
+}
+.footer {
+  width: 15rem;
+  position: absolute;
+}
+.row {
+  display: flex;
+  overflow: scroll;
+  width: 100%;
+  height: 450px;
+}
+.annonce {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 2fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  overflow-y: visible;
+}
