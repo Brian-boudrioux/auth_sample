@@ -266,7 +266,7 @@ CREATE TABLE `users` (
   `Martricule` varchar(85) NOT NULL,
   `Password` varchar(255) NOT NULL,
   `Email` varchar(80) NOT NULL,
-  `Phone` int NOT NULL,
+  `Phone` varchar(10) NOT NULL,
   `Seniority` datetime NOT NULL,
   `Admin` tinyint NOT NULL,
   PRIMARY KEY (`id_Users`)
