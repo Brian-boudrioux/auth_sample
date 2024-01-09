@@ -31,7 +31,7 @@ const router = createBrowserRouter([
         element: <HomePage />,
         loader: () => {
           return fetch(`${import.meta.env.VITE_BACKEND_URL}/users`, {
-            // credentials: "include",
+            credentials: "include",
           });
         },
       },

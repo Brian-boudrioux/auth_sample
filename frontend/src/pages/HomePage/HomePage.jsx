@@ -10,7 +10,6 @@ import "./homepage.css";
 function HomePage() {
   const [filter, setFilter] = useState([]);
   const users = useLoaderData();
-  console.log(users);
   const annonce = useContext(AnnonceContext);
   const handleFilterChange = (newFilter) => {
     setFilter(newFilter);

@@ -27,11 +27,11 @@ const login = async (req, res, next) => {
         process.env.APP_SECRET,
         { expiresIn: "30d" }
       );
-      res.cookie("token", token, {
+      res.cookie("auth-token", token, {
         expire: "30d",
         httpOnly: true,
-        sameSite: "none",
-        domain: process.env.FRONTEND_URL,
+        secure: false,
+        sameSite: "Lax",
       });
       res.status(200).json(user);
     } else res.sendStatus(422);

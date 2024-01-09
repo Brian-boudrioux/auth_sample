@@ -17,7 +17,10 @@ function Connection() {
         `${import.meta.env.VITE_BACKEND_URL}/users/login`,
         {
           method: "POST",
-          headers: { "Content-Type": "application/json", credentials: true },
+          headers: {
+            "Content-Type": "application/json",
+          },
+          credentials: "include",
           body: JSON.stringify({
             Email: Email.current.value,
             Password: Password.current.value,
