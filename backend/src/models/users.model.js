@@ -22,7 +22,12 @@ const findById = (id) => {
   return db.query("SELECT * FROM users WHERE id_Users = ?", [id]);
 };
 
+const findByEmail = (email) => {
+  return db.query("SELECT * FROM users WHERE Email = ?", [email]);
+};
+
 module.exports = {
   insert,
   findById,
+  findByEmail,
 };
