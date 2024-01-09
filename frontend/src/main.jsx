@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { AnnonceProvider } from "./context/AnnonceContext";
+import { AuthProvider } from "./context/AuthContext";
 import App from "./App";
 import HomePage from "./pages/HomePage/HomePage";
 import Candidate from "./pages/Candidate/Candidate";
@@ -16,7 +17,6 @@ import Connection from "./pages/Connection/Connection";
 import OfferDescription from "./components/offerdescription/OfferDescription";
 import Inscription from "./pages/Inscription/inscription";
 
-
 const router = createBrowserRouter([
   {
     path: "/",
@@ -29,6 +29,11 @@ const router = createBrowserRouter([
       {
         path: "/homepage",
         element: <HomePage />,
+        loader: () => {
+          return fetch(`${import.meta.env.VITE_BACKEND_URL}/users`, {
+            // credentials: "include",
+          });
+        },
       },
       {
         path: "/candidate",
@@ -51,7 +56,6 @@ const router = createBrowserRouter([
         element: <Validation />,
       },
       {
-
         path: "/profilmodif",
         element: <ProfilModif />,
 
@@ -61,7 +65,6 @@ const router = createBrowserRouter([
       {
         path: "/inscription",
         element: <Inscription />,
-
       },
     ],
   },
@@ -71,8 +74,10 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
-    <AnnonceProvider>
-      <RouterProvider router={router} />
-    </AnnonceProvider>
+    <AuthProvider>
+      <AnnonceProvider>
+        <RouterProvider router={router} />
+      </AnnonceProvider>
+    </AuthProvider>
   </React.StrictMode>
 );

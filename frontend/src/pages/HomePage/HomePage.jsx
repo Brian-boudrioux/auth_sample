@@ -1,4 +1,5 @@
 import { useContext, useState } from "react";
+import { useLoaderData } from "react-router-dom";
 import Header from "../../components/header/Header";
 import Category from "../../components/category/Category";
 import NavBar from "../../components/navbar/NavBar";
@@ -8,6 +9,8 @@ import "./homepage.css";
 
 function HomePage() {
   const [filter, setFilter] = useState([]);
+  const users = useLoaderData();
+  console.log(users);
   const annonce = useContext(AnnonceContext);
   const handleFilterChange = (newFilter) => {
     setFilter(newFilter);
@@ -17,6 +20,7 @@ function HomePage() {
   });
   return (
     <div className="homepage">
+      {users && users.map((user) => <p>{user.Email}</p>)}
       <section className="entete">
         <Header />
       </section>
